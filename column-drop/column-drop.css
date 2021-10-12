@@ -29,69 +29,43 @@ header {
 
 main {
     background-color: var(--greenDark);
-    min-height: 40vh;
+    min-height: 60vh;
 }
 
 aside { 
     background-color: var(--green);
-    min-height: 60vh;
+    min-height: 20vh;
 }
 
-aside + aside {
+main + aside {
     background-color: var(--greenLight);  
 }
 
 @media screen and (min-width: 768px) {
-    .wrapper{
-		display: flex;
-		flex-wrap: wrap;	
-	}
-	main {
-		width:100%
-	}
-	aside {
-		width:100%
-	}
-	aside + aside {
-		width:100%
-	}
+    /* Add Tablet Content Here */
 }
 
 @media screen and (min-width: 1024px) {
-    .wrapper{
-		display: flex;
-		flex-wrap: wrap;
-	}
-	main {
-		width:75%;
-    order:2;
-	}
-	aside {
-		width:25%;
-    order:1;
-	}
-	aside + aside {
-		width:100%;
-    order:3;
-	}
+    /* Add Laptop Content Here */
 }
 
 @media screen and (min-width: 1200px) {
   .wrapper{
-		display: flex;
-		flex-wrap: wrap;
-	}
-	main {
-		width:50%;
-      order:2;
-	}
-	aside {
-		width:25%;
-      order:1;
-	}
-	aside + aside {
-		width:25%;
-      order:3;
-	}
+    display:flex;
+    flex-wrapper:wrap;
+  
+  }
+  main{
+    width:75%;
+    order:2;
+  }
+  aside{
+    width:25%;
+    order:1;
+  }
+  aside+aside{
+    width:75%;
+    order:3;
+  }
 }
 
